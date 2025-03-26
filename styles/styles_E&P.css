@@ -1,0 +1,141 @@
+.timeline   {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3.5%;
+    background-color: rgb(218, 217, 217);
+    /*margin: 100px auto;*/
+    position: relative;
+    border-radius: 20px;
+}
+
+.container    {
+    padding: 10px 50px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.textbox    {
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.left{
+    grid-column: 1 / 2;
+}
+
+.right  {
+    grid-column: 2 / 3;
+}
+
+#first  {
+    grid-row: 1 / 2;
+}
+
+#second  {
+    grid-row: 2 / 3;
+}
+
+#third  {
+    grid-row: 3 / 4;
+}
+
+.timeline::after    {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 95%;
+    background: #fff;
+    top: 10px;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 4px;
+}
+
+.globo_r  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: -45px;
+    top: 50%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.globo_l  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: -45px;
+    top: 50%;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card   {
+    max-height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    grid-column: span 1;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) /*o de 2 si no pongo iconos*/;
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.card_img   {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.card_name  {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+    font-size: 200%;
+}
+
+.card_description   {
+    grid-row: 2 / 3;
+    grid-column: 2 / -1;
+    padding: 0 10px;
+    text-align: justify;
+    font-size: 125%;
+
+}
+
+.card_icons {
+    grid-row: 3 / -1;
+    grid-column: 2 / 1;
+}

@@ -1,3 +1,19 @@
+<!-- 
+ 5.	Aplicar	un	layout	responsive	en	columnas	usando	bootstrap,	flexbox	o
+ CSS	Grid.
+ 7.	El	repositorio	de	git	debe	contar	con	al	menos	3	commits	(agrego	algo
+ significativo,	hago	un	commit,	no	esperen	a	subir	todo	al	final)
+
+ +1.	el	formulario	de	contacto	funciona	y	se	puede	obtener	una	planilla
+ con	los	datos	completados	por	distintos	visitantes	(averigue	y	utilice
+ algún	servicio	existente	para	esto).
+ +1.	El	portfolio	se	encuentra	subido	a	algún	hosting	estático	y	se	puede
+ acceder	desde	internet.	La	URL	de	la	página	debe	estar	en	el	README
+ del	repositorio	para	poder	accederla.
+ +1.	El	portfolio	tiene	un	botón	para	cambiar	los	colores	entre	estilo	claro
+ y	oscuro	(dark/light	mode).
+
+ -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,15 +21,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/styles_home.css">
     </head>
     <body>
         <header>
             <nav> <a href="index.html">Home</a> <a href="experience&proyects.html">Habilidades & Proyectos</a> <a href="redes&formulario.html">Redes Sociales</a></nav>
+            <button id="ilumination_button">Change Mode</button>
         </header>
-        <img src="/images/avatar-de-perfil.png">
-        <h1>Pepe Sapo - Desarrolador FrontEnd</h1>
-        <p> Soy Desarrollador Frontend con experiencia en la creación de interfaces intuitivas y dinámicas. Apasionado por el diseño responsivo, la optimización del rendimiento y la experiencia de usuario.</p>
-        <h2>Habilidades</h2>
+        <section class="info_perfil">
+            <img src="/images/avatar-de-perfil.png" id="foto_perfil">
+            <h1>Pepe Sapo - Desarrolador FrontEnd</h1>
+        </section>
+        <section class="data">
+            <h2>Sobre mí</h2>
+            <p> Soy Desarrollador Frontend con experiencia en la creación de interfaces intuitivas y dinámicas. Apasionado por el diseño responsivo, la optimización del rendimiento y la experiencia de usuario.</p>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desarrollo y mantenimiento de interfaces web modernas.</li>
+                <li>Maquetación responsive con Flexbox y Grid.</li>
+                <li>Consumo de APIs REST para integrar datos dinámicos.</li>
+                <li>Uso de herramientas como Git, Figma y Webpack.</li>
+                <li>Principios básicos de UX/UI para mejorar la usabilidad.</li>
+            </ul>
+        </section>
     </body>
 </html>

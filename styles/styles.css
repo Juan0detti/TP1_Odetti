@@ -4,4 +4,39 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:"wdth" 100;
+    min-width: 500px;
   }
+
+header  {
+  height: 50px;
+  margin-bottom: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  width: 60%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+nav > a {
+  align-content: center;
+  border-color: rgb(177, 174, 174);
+}
+
+nav > a:hover{
+  background: linear-gradient(to bottom, white, rgba(25, 254, 0, 0.4));
+}
+
+#ilumination_button  {
+  height: 60%;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+

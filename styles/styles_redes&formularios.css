@@ -1,0 +1,118 @@
+main {
+  display: grid;
+  place-items: center;
+  height: 100hv;
+  margin-bottom: 10p
+}
+
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  margin-bottom: 10px;
+}
+
+.inputs_type    {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label   {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #EDFFF0;
+  border: 2px solid #F0FAF1;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder   {
+  color: #b5cab6;
+}
+
+.form-txt   {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a {
+  color: #76b28e;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn    {
+  font-size: 16px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51D94C;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #50E048;
+}
+
+.redes_icono {
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #76b28e;
+    border: 2px solid #51D94C;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+  }
+
+  .redes_png  {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+  }
+
+  .redes_icono:hover {
+    color: #fff;
+  }
+
+  .linkedin:hover {
+    background-color: #0072b1;
+    border: 2px solid #0072b1;
+    box-shadow: 0 0 20px #0072b1;
+  }
+  
+  .github:hover {
+    background-color: #666666;
+    border: 2px solid #666666;
+    box-shadow: 0 0 20px #666666;
+  }
+  
+  .twitter:hover {
+    background-color: #00acee;
+    border: 2px solid #00acee;
+    box-shadow: 0 0 20px #00acee;
+  }
+  
+  .instagram:hover {
+    background-color: #e4405f;
+    border: 2px solid #e4405f;
+    box-shadow: 0 0 20px #e4405f;
+  }
