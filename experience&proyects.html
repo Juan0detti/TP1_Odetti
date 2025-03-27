@@ -3,23 +3,24 @@
     <head>
         <title>Habilidades y Proyectos Pepe Sapo</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles_E&P.css">
     </head>
     <body>
         <header>
             <nav> <a href="index.html">Home</a> <a href="experience&proyects.html">Habilidades & Proyectos</a> <a href="redes&formulario.html">Redes Sociales</a></nav>
-            <button id="ilumination_button">Change Mode</button>
         </header>
+        <main>
         <h1>Pepe Sapo - Desarrolador FrontEnd</h1>
         <h2>Experiencia</h2>
         <section class="timeline">
-            <div class="container left" id="first">
+            <div class="container left first">
+                <span class="left_container_arrow"></span>
                 <div class="textbox">
-                    <h3> Desarrollador Frontend - Startup TechX <h3>
+                    <h3> Desarrollador Frontend - Startup TechX</h3>
                         <small>Enero 2024 - Presente</small>
-                        <span class="globo_r"></span>
-                        <span class="right_container_arrow"></span>
                     <ul>
                         <li>Desarrollo de interfaces responsivas con React y Tailwind CSS.</li>
                         <li>Optimización del rendimiento de la aplicación web.</li>
@@ -27,13 +28,13 @@
                     </ul>
                 </div>
             </div>
+            <span class="globo first"></span>
             
-            <div class="container right" id="second">
+            <div class="container right second">
+                <span class="right_container_arrow"></span>
                 <div class="textbox">
                     <h3>Desarrollador Web - Agencia Digital Creativa</h3>
                     <small>Julio 2023 - Diciembre 2023</small>
-                    <span class="globo_l"></span>
-                    <span class="left_container_arrow"></span>
                     <ul>
                         <li>Creación de landing pages dinámicas con HTML, CSS y JavaScript.</li>
                         <li>Colaboración con diseñadores UX/UI para mejorar la experiencia de usuario.</li>
@@ -41,13 +42,13 @@
                     </ul>
                 </div>
             </div>
+            <span class="globo second"></span>
 
-            <div class="container left" id="third">
+            <div class="container left third">
                 <div class="textbox">
+                    <span class="left_container_arrow"></span>
                     <h3>Intern Frontend Developer - Empresa de Software XYZ</h3>
                     <small>Marzo 2023 - Junio 2023</small>
-                    <span class="globo_r"></span>
-                    <span class="right_container_arrow"></span>
                     <ul>
                         <li>Apoyo en la refactorización de código y mejora de componentes.</li>
                         <li>Implementación de nuevas funcionalidades en un e-commerce.</li>
@@ -55,6 +56,7 @@
                     </ul>
                 </div>
             </div>
+            <span class="globo third"></span>
         </section>
 
         <h2>Proyectos</h2>
@@ -65,7 +67,7 @@
                 <p class="card_description">
                     Es un juego de estrategia en el que dos jugadores, X y O, se turnan para marcar una cuadrícula de 3x3. El objetivo es alinear tres de sus símbolos en una fila, columna o diagonal antes que el oponente.
                 </p>
-                <div class="card_icons"></div>
+                <!--<img src="/images/iconos programas.jpg" class="card_icons">-->
             </div>
 
             <div class="card">
@@ -74,7 +76,7 @@
                 <p class="card_description">
                     Es un juego de palabras en el que los jugadores intentan adivinar una palabra de cinco letras en un máximo de seis intentos. Después de cada intento, el juego indica qué letras están en la palabra y si están en la posición correcta.
                 </p>
-                <div class="card_icons"></div>
+                <!--<img src="/images/iconos programas.jpg" class="card_icons">-->
             </div>
 
             <div class="card">
@@ -83,7 +85,7 @@
                 <p class="card_description">
                     Es un juego de lógica en el que los jugadores deben descubrir todas las casillas vacías de un tablero sin hacer clic en las minas ocultas. Los números en las casillas indican cuántas minas hay en las celdas adyacentes.
                 </p>
-                <div class="card_icons"></div>
+                <!--<img src="/images/iconos programas.jpg" class="card_icons">-->
             </div>
 
             <div class="card">
@@ -91,10 +93,17 @@
                 <h3 class="card_name">SimonDice</h3>
                 <p class="card_description">Es un juego de memoria en el que los jugadores deben repetir secuencias de colores y sonidos generadas por un dispositivo electrónico o por un líder. La secuencia se vuelve más larga y compleja con cada ronda.
                 </p>
-                <div class="card_icons"></div>
+                <!--<img src="/images/iconos programas.jpg" class="card_icons">-->
             </div>
         </div>
-        
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+            window.addEventListener('load', addDarkmodeWidget);
+    </script>
     </body>
 </html>
 

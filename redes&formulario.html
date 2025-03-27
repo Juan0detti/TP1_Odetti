@@ -3,12 +3,13 @@
     <head>
         <title>Habilidades y Proyectos Pepe Sapo</title>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/styles_redes&formularios.css">
     </head>
     <header>
         <nav> <a href="index.html">Home</a> <a href="experience&proyects.html">Habilidades & Proyectos</a> <a href="redes&formulario.html">Redes Sociales</a></nav>
-        <button id="ilumination_button">Change Mode</button>
     </header>
     <body>
         <main>
@@ -38,11 +39,18 @@
             </form>
             <h2>Redes</h2>
             <div class="redes-sociales">
-                <a href="https://linkedin.com" target="_blank" class="redes_icono linkedin"><img src="/images/">Linkedin</a>
-                <a href="https://github.com" target="_blank" class="redes_icono github"><img src="/images/icono-github.png" class="redes_png">Github</a>
-                <a href="https://twitter.com" target="_blank" class="redes_icono twitter"><img src="/images/">Twitter</a>
-                <a href="https://instagram.com" target="_blank" class="redes_icono instagram"><img src="/images/">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="redes_icono linkedin"><img src="/images/LinkedIn_icon.svg.png" class="redes_png"><p>Linkedin</p></a>
+                <a href="https://github.com" target="_blank" class="redes_icono github"><img src="/images/icono-github.png" class="redes_png"><p>GitHub</p></a>
+                <a href="https://twitter.com" target="_blank" class="redes_icono twitter"><img src="/images/iconoTwitter.avif" class="redes_png"><p>Twitter/X</p></a>
+                <a href="https://instagram.com" target="_blank" class="redes_icono instagram"><img src="/images/icono-istagram1.webp" class="redes_png"><p>Instagram</p></a>
             </div>
         </main>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+        }
+            window.addEventListener('load', addDarkmodeWidget);
+    </script>
 </html>
