@@ -4,12 +4,10 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings:"wdth" 100;
-    min-width: 500px;
   }
   main {
     display: grid;
     place-items: center;
-    height: 100hv;
     margin-bottom: 10p
   }
 
